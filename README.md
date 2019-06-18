@@ -1,7 +1,9 @@
 Usage
 ```
-module "k8s" {
-  source       = "./k8s"
+module "kubernetes" {
+  source  = "ESSch/kubernetes/google"
+  version = "0.0.2"
+
   project_name = "node-cluster-243923"
 }
 ```
