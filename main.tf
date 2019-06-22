@@ -19,4 +19,5 @@ resource "google_container_node_pool" "node-ks-pool" {
         min_node_count = 1
         max_node_count = 2
     }
+    depends_on = [google_container_cluster.node-ks]
 }
