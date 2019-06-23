@@ -9,3 +9,7 @@ variable "gce_key" {
 variable "node_count_zone" {
     default = 1
 }
+
+variable "node_pull" {
+    default = true
+}

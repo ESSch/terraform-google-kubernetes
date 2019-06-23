@@ -1,7 +1,7 @@
 resource "google_container_cluster" "node-ks" {
     name               = "node-ks"
     location           = "${var.region}-a"
-    node_locations     = ["${var.region}-b", "${var.region}-c"]
+    node_locations     = var.node_pull ? ["${var.region}-b", "${var.region}-c"] : []
     initial_node_count = 1
 }
 
