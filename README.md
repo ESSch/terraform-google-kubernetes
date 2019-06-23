@@ -60,6 +60,9 @@ module "kubernetes_prod" {
   }
 }
 ```
-```
-
+```bash
+$ gcloud compute instances list
+NAME                                    ZONE             MACHINE_TYPE   PREEMPTIBLE  INTERNAL_IP  EXTERNAL_IP   STATUS
+gke-node-ks-default-pool-f8d0cffb-1kgs  europe-north1-a  n1-standard-1               10.166.0.23  35.228.143.7  RUNNING
+gke-node-ks-node-ks-pool-eeb1a7bf-z95j  europe-north1-a  n1-standard-1               10.166.0.24  35.228.96.97  RUNNING
 ```
